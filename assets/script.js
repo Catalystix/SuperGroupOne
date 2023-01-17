@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //target the search button for a click event
+
 var searchBtn = document.getElementById("searchBtn");
 searchBtn.addEventListener("click", logLyric);
 
-//
 function logLyric() {
   var inputBox = document.getElementById("Search");
   var lyric = inputBox.value;
@@ -89,10 +89,10 @@ function displayMusicmatch() {
 
 
 //target the search button for a click event
-var youTubebtn = document.getElementById("youTubebtn");
-youTubebtn.addEventListener("click", youTubeAPI);
-console.log("youTubebtn")
 
+  var youTubebtn = document.getElementById("youTubebtn");
+  youTubebtn.addEventListener("click", youTubeAPI);
+  console.log("youTubebtn")
 
 function youTubeAPI() {
   var input = document.getElementById("Search").value;
@@ -154,8 +154,8 @@ $("#youTubebtn").on("click", function( ){
   })
   
   
+  
 console.log("top6")
-
 // youtube API key
 const key = "AIzaSyD2OrpKeJ6CUDPO-oZ5KB2mmLdWD0PSh8c";
 const muskey = "1b483628365d407895a612635af439ad"
