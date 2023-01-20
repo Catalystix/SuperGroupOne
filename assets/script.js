@@ -33,7 +33,7 @@ function logLyric() {
   var mXm =
     "https://proxy.cors.sh/https://api.musixmatch.com/ws/1.1/track.search?q_lyrics=" +
     lyric +
-    "&apikey=f5675484f5751c3529bca2ad13ec32fd";
+    "&apikey=38bfab1d78863e402542205e1d2d9257";
   fetchData(mXm);
 }
 //take input and fetch song data from musixmatch
@@ -42,8 +42,8 @@ function fetchData(mXm) {
   fetch(mXm, {
     headers: {
       // allows us to bypass the CORS error,
-      // will need to replace temp api key before presentation (expires on sunday)
-      "x-cors-api-key": "temp_ff7769232ae92309ea6953784f170a83",
+      // will need to replace temp api key at some point
+      "x-cors-api-key": "temp_df6e303c39b09caae7dff0d19e5a319c",
     },
   })
     .then(function (response) {
@@ -181,7 +181,7 @@ function addToRecentSearch() {
     var mXm =
       "https://proxy.cors.sh/https://api.musixmatch.com/ws/1.1/track.search?q_lyrics=" +
       lyric +
-      "&apikey=f5675484f5751c3529bca2ad13ec32fd";
+      "&apikey=38bfab1d78863e402542205e1d2d9257";
     fetchData(mXm);
   }
 }
@@ -202,7 +202,7 @@ function setButtons() {
       var mXm =
         "https://proxy.cors.sh/https://api.musixmatch.com/ws/1.1/track.search?q_lyrics=" +
         lyric +
-        "&apikey=f5675484f5751c3529bca2ad13ec32fd";
+        "&apikey=38bfab1d78863e402542205e1d2d9257";
       fetchData(mXm);
     }
   }
